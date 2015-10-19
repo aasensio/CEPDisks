@@ -1,0 +1,40 @@
+!---------------------
+! CO model with Jmax=11
+!---------------------
+
+! Abundance
+   8.d-5 
+
+! Mass (we want to use a given turbulent velocity. this minimizes the vtherm and forces the selection of vturb)
+       280.000000
+
+! Number of levels
+2
+
+! Number of transitions
+1
+
+! Number of radiative transitions
+1
+
+! Number of active transitions
+1
+
+! Energy level energy [cm^-1] and statistical weight
+       1     0.000         1.00000
+       2     12.12         3.00000       
+
+! Type of collisional data [INTERPOL, FIT (A*T^b)]
+FIT
+
+! Number of coefficients for collisional interpolation or number of parameters of the fit to read
+ 5
+
+! Temperatures (not used if type is FIT)
+  5.0  10.0  20.0  30.0  50.0
+
+! Radiative transitions
+   1    2    1  3.7240E+011  1.04E-004
+
+! Collisional transitions
+   1    2    1   1.3816497e-10 0.d0
