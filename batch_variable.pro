@@ -8,7 +8,7 @@
 ;************************************
 pro batch_variable_calculate1
 
-	epsilons = ['5.d-1','1.d-2']
+	epsilons = ['1.d-1','1.d-2']
 	xmols = [1.d-5,1.d-6,1.d-7,1.d-8,1.d-9,1.d-10]
 	
 	for j = 0, n_elements(xmols)-1 do begin
@@ -28,7 +28,7 @@ end
 ;************************************
 pro batch_variable_calculate2
 	
-	epsilons = ['5.d-1','1.d-2']
+	epsilons = ['1.d-1','1.d-2']
 	xmols = [1.d-5,1.d-6,1.d-7,1.d-8,1.d-9,1.d-10]
 	
 	for j = 0, n_elements(xmols)-1 do begin
@@ -44,9 +44,8 @@ end
 
 
 pro batch_synth1
-	
-	epsilons = ['1.d-3','1.d-2','1.d-1','5.d-1']
-	epsilons = ['5.d-1','1.d-2']
+		
+	epsilons = ['1.d-1','1.d-2']
 	nepsilons = n_elements(epsilons)
 	
 	xmols = [1.d-5,1.d-6,1.d-7,1.d-8,1.d-9,1.d-10]
@@ -84,7 +83,7 @@ end
 
 pro batch_synth2
 		
-	epsilons = ['5.d-1','1.d-2']
+	epsilons = ['1.d-1','1.d-2']
 	nepsilons = n_elements(epsilons)
 	
 	xmols = [1.d-5,1.d-6,1.d-7,1.d-8,1.d-9,1.d-10]
