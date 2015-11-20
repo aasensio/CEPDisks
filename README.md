@@ -24,4 +24,22 @@ hardwired (for example the mass of the species and the Einstein Aul coefficient)
 or anything else, you might have to modify them accordingly here.
 
 4. Inside the `output_variable` directory, you find the routine `read_all.pro` that reads all the calculations
-and generates and IDL save file with the line profiles.
+and generates and IDL save file with the line profiles. The variables `epsilons', `xmols', `angles', 
+`vels' and `disk_cases' at the beginning of the file need to be modified to be consistent with the
+range of parameters used for the calculations carried out before.
+
+5. This generates a `profiles.idl' file that contains several variables:
+
+    `profs' is a [loop_cases,loop_eps,loop_xmols,loop_angles,loop_vels,frequency] array containing the
+    integrated profiles of the disk at different inclination angles and rotation velocities
+    `optdepth' is a [loop_cases,loop_eps,loop_xmols,loop_angles,loop_vels] giving the maximum optical
+    depth of the disk
+    `vels' is a [frequency] velocity axis
+
+    These profiles are those shown in Fig. 2 of Asensio Ramos et al. (2007)
+
+6. In each individual directory, you can find files of the form `disk_angle90_vel_5.0_eps5.d-1.idl'
+that contain the monochromatic images of the disk and the individual optical depth along each computed 
+ray.
+    `image3' is an array of size [nx.ny,frequency] and contains the monochromatic images [nx,ny]
+    `tot_opt_depth' is an array of size [nx.ny,frequency] and contains the monochromatic optical depth along each ray

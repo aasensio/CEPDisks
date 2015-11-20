@@ -45,7 +45,7 @@ end
 
 pro batch_synth1
 		
-	epsilons = ['1.d-1','1.d-2']
+	epsilons = ['1.d-1'] ;,'1.d-2']
 	nepsilons = n_elements(epsilons)
 	
 	xmols = [1.d-5,1.d-6,1.d-7,1.d-8,1.d-9,1.d-10]
@@ -83,7 +83,7 @@ end
 
 pro batch_synth2
 		
-	epsilons = ['1.d-1','1.d-2']
+	epsilons = ['1.d-1'] ;,'1.d-2']
 	nepsilons = n_elements(epsilons)
 	
 	xmols = [1.d-5,1.d-6,1.d-7,1.d-8,1.d-9,1.d-10]

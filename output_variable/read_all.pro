@@ -23,19 +23,19 @@ end
 
 pro read_all
 			
-	epsilons = ['5.d-1','1.d-2']
+	epsilons = ['1.d-1']
 	nepsilons = n_elements(epsilons)
 	
-	xmols = [1.d-5,1.d-6,1.d-7,1.d-8,1.d-9,1.d-10]
+	xmols = [1.d-5] ;,1.d-6,1.d-7,1.d-8,1.d-9,1.d-10]
 	nxmols = n_elements(xmols)
 	
-	angles = [1,30,60,90]
+	angles = [1] ;,30,60,90]
 	nangles = n_elements(angles)
 	
-	vels = [0.d0,3.d0,5.d0,10.d0]
+	vels = [0.d0];,3.d0,5.d0,10.d0]
 	nvels = n_elements(vels)
 		
-	disk_cases = [1,2]
+	disk_cases = [2]
 	ncases = n_elements(disk_cases)
 	
 	optdepth = fltarr(ncases,nepsilons,nxmols,nangles,nvels)

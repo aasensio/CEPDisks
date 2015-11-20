@@ -18,10 +18,10 @@ pro dibuja_profiles_paper
 	nmols = n_elements(mols)
 	which_mols = [2,3,4,5,6]
 			
-	angles = [90,60,30,1]
+	angles = [1] ;90,60,30,1]
 	nangles = n_elements(angles)
 	
-	vels = [0.d0,1.d0,3.d0,5.d0,7.d0,10.d0]
+	vels = [0.d0] ;,1.d0,3.d0,5.d0,7.d0,10.d0]
 	nvels = n_elements(vels)
 	which_vel = [0,2,3,5]
 	
@@ -33,8 +33,8 @@ pro dibuja_profiles_paper
 				
 ; loop_eps,loop_mols,loop_angle,loop_vels,freq
 	
-	for loop_ang = 3, 0, -1 do begin
-		for loop_v = 0, 3 do begin
+	for loop_ang = n_elements(angles)-1, 0, -1 do begin
+		for loop_v = 0, n_elements(vels)-1 do begin
 			plot, [0,0], /nodata, xran=[-5,5], xsty=1, yran=[0,max_y[3-loop_ang]], ysty=1, charsize=0.8
 			if (loop_v eq 0) then begin
 				xyouts,-4.5,0.060,labels_angles[3-loop_ang],/data,charsize=0.8
